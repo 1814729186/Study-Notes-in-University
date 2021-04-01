@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name = "viewport" content = "width=device-width,initial-scale=1.0,usr-scale='no'">
+		<title>HelloWorld！</title>
+		<style>	/*引入CSS的一种方式*/
+			html,body{	/*元素选择器，设置高度等属性，选中thml、body*/
+				height:100%;
+				margin:0;
+				padding:0;
+			}
+			body{
+				background: blanchedalmond url(./img/background.jpg) no-repeat center center;	/*通过url设置背景色与背景图片,后两个表示位置*/
+				background-size: cover;		/*设置充满整个屏幕*/
+				position: relative;
+			}
+			.container{/*类选择器*//*多个同种元素时，使用类选择器，否则不能区分*/
+				position:absolute;
+				top:50%;
+				text-align:center;
+				width:calc(100% - 40px);
+				transform:translateY(-50%);
+				padding: 20px;/*边距*/
+			}
+			h1{
+				line-height: 90px;	/*行高*/
+				color:#FFFFFF;		/*白色*/
+				font-size:50px;		/*字体大小*/
+			}
+			p{
+				line-height:80px;
+				font-size:22px;
+				color:#FFFFFF;
+			}
+			.btn{
+				width:200px;
+				height:60px;
+				background-color: #7cacae;
+				margin:30px auto;	/*外边距属性,前一个表示距上一个元素的边界距离，后一个auto表示两边距离一样大（水平居中）*/
+				line-height:60px;
+				color:#FFFFFF;
+				font-size: 24px;
+				border-radius:10px;/*圆角设计*/
+				transition: 1s;		/*渐变效果，后跟时间*/
+			}
+			.btn:hover{/*鼠标悬停时的显示效果*/
+				width:300px;
+				height: 100px;
+				background-color: #a4e4e6;
+				line-height: 100px;
+				margin:100px auto;
+			}
+		</style>
+	</head>
+	<body>
+	<div class = "container">
+		<h1>Let's stert our first page!</h1>
+		<p>欢迎来到html乐园，你将获得独立完成静态页面的技能</p>
+		<div class = "btn"><a href = "./pra01.html" style="color: #FFFFFF; text-decoration:none;" >START</a></div>
+		</div>
+	</body>
+</html>
