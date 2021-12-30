@@ -8,7 +8,7 @@ import (
 
 var vaa int
 
-func main() {
+func main1() {
 	/*reader := bufio.NewReader(os.Stdin)
 	input, err := reader.ReadString('\n')
 	if err != nil {
