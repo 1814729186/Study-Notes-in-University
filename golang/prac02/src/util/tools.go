@@ -88,3 +88,12 @@ func (m Mytype) Method() {
 func (m *Mytype) PointerMethod() {
 	fmt.Println("pointer")
 }
+
+//defer 延迟调用测试
+func DeferTest() {
+	defer fmt.Println("1")
+	defer fmt.Println("2")
+	defer fmt.Println("3")
+
+	return
+}

@@ -1,0 +1,13 @@
+<h1>Guestbook</h1>  <!--一级标题-->
+<div>
+    <!--点值时Guestbook struct，在这里插入其SignatureCount字段-->
+    {{.SignatureCount}} total signatures -
+    <a href = "/guestbook/new">Add Your Signature</a>   <!--路径链接-->
+</div>
+
+<div>
+    <!--从Guestbook.struct的Signatures字段中获取切片，并对包含的每个字符串进行重复-->
+    {{range .Signatures}}
+    <p>{{.}}</p>    <!--对每个元素都会重复该操作，“点”被设置为当前签名字符串，插入包含签名的HTML paragraph元素-->
+    {{end}}
+</div>
