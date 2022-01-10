@@ -1,4 +1,0 @@
-main
-int main(){}
-main
-11111
