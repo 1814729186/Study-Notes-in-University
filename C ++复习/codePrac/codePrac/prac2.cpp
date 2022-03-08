@@ -14,11 +14,18 @@ int main() {
 using namespace std;
 
 class A {
-	int v1;
+	mutable int v1;
+	static int v2;
 	friend void main();
-	A(int a):v1(a) {}
+	class B {
+		int b;
+	public:
+		B(int b) :b(b) {}
+	}b;
+	A(int a):v1(a),b(0) {}
 };
 void main() {
-	A a(1);
+	const A a(1);
 	cout << a.v1;
+	a.v1 = 1;
 }
