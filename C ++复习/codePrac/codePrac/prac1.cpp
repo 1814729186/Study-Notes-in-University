@@ -1,7 +1,7 @@
 #define CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include<stdlib.h>
-int main() {
+int main1() {
 	//水量信息
 	int T = 0;
 	int n = 0;
