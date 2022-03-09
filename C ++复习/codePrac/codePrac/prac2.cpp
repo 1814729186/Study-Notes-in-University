@@ -13,19 +13,13 @@ int main() {
 
 using namespace std;
 
-class A {
-	mutable int v1;
-	static int v2;
-	friend void main();
-	class B {
-		int b;
-	public:
-		B(int b) :b(b) {}
-	}b;
-	A(int a):v1(a),b(0) {}
-};
-void main() {
-	const A a(1);
-	cout << a.v1;
-	a.v1 = 1;
+namespace MZP{
+	
+
+}
+namespace {
+	
+}
+int main() {
+	cout << "sss";
 }
