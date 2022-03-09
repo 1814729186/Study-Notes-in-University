@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+//#define _CRT_SECURE_NO_WARNINGS
 /*#include <stdio.h>
 int m = scanf_s("%d",&m);
 const int n = m +10;
@@ -9,17 +9,9 @@ int main() {
 	return 0;
 }*/
 
-#include <iostream>
-
+#include <iostream> 
 using namespace std;
-
-namespace MZP{
-	
-
-}
-namespace {
-	
-}
 int main() {
-	cout << "sss";
+	short i = 0;
+	i = i + 1L;
 }
