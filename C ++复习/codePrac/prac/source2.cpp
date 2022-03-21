@@ -80,31 +80,33 @@ void postOrderTraverse(Tree tree) {
 
 //手写后续遍历
 void postOrder(Tree tree) {
-	struct treeNode* curNode = tree,*pre;
-	struct treeNode* stack[MAX_SIZE];
-	int top = 0, flag;
+	struct treeNode* stack[MAX_SIZE], *pre, *curNode;
+	int top = 0,flag;
+	curNode = tree;
 	if (!tree) return;
 	do {
-		//将所有元素入栈
+		//左子树全部入栈
 		while (curNode) {
 			stack[top++] = curNode;
 			curNode = curNode->leftChild;
 		}
-		//检查栈顶元素
-		flag = 1; pre = nullptr;
-		while (top && flag) {
+		//设置标记
+		pre = nullptr; flag = 1;
+		while (top&&flag) {
+			//检查栈顶元素的右子树是否已经访问
 			curNode = stack[top - 1];
 			if (curNode->rightChild == pre) {
-				cout << curNode->val;
-				top--;
+				//访问该节点
+				cout << curNode->val << " ";
 				pre = curNode;
+				top--;//出栈
 			}
 			else {
 				curNode = curNode->rightChild;
 				flag = 0;
 			}
 		}
-	} while (curNode);
+	} while (top);
 }
 
 
