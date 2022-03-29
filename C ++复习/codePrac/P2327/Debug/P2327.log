@@ -1,2 +1,6 @@
 ﻿  main.cpp
+F:\Daily_Files\Study_Files\gitFolder\Study-Notes-in-University\C ++复习\codePrac\P2327\main.cpp(14,11): warning C4018: “<”: 有符号/无符号不匹配
+F:\Daily_Files\Study_Files\gitFolder\Study-Notes-in-University\C ++复习\codePrac\P2327\main.cpp(36,8): warning C4018: “>=”: 有符号/无符号不匹配
+F:\Daily_Files\Study_Files\gitFolder\Study-Notes-in-University\C ++复习\codePrac\P2327\main.cpp(49,11): warning C4018: “<”: 有符号/无符号不匹配
+F:\Daily_Files\Study_Files\gitFolder\Study-Notes-in-University\C ++复习\codePrac\P2327\main.cpp(68,8): warning C4018: “>=”: 有符号/无符号不匹配
   P2327.vcxproj -> F:\Daily_Files\Study_Files\gitFolder\Study-Notes-in-University\C ++复习\codePrac\Debug\P2327.exe
